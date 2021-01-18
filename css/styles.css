@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+section {
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.one {
+  background-color: #333;
+  color: white;
+}
+
+.two {
+  background-color: #ef6a26;
+}
+
+.three {
+  background-color: #171719;
+  color: white;
+}
+
+.four {
+  background-color: #ded1da;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 95vh;
+  padding: 3rem calc((100vw - 1280px) / 2) 0;
+}
+
+.column-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.column-left button {
+  display: block;
+  padding: 1rem 3rem;
+  font-style: 1rem;
+  background-color: #f1c200;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #222;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.column-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  img {
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
