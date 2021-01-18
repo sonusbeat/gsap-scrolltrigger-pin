@@ -1,4 +1,4 @@
-# Gsap with scroll trigger Tutorial
+# Gsap with Scroll Trigger Tutorial
 
 ## Pin Effect
 
